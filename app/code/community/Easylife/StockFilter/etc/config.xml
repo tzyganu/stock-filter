@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Easylife_StockFilter extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_EASYLIFE_STOCK_FILTER.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   	Easylife
+ * @package	    Easylife_StockFilter
+ * @copyright   Copyright (c) 2014 Marius Strajeru
+ * @license	    http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Easylife_StockFilter>
+            <version>1.0.0</version>
+        </Easylife_StockFilter>
+    </modules>
+    <global>
+        <models>
+            <easylife_stockfilter>
+                <class>Easylife_StockFilter_Model</class>
+            </easylife_stockfilter>
+        </models>
+        <blocks>
+            <easylife_stockfilter>
+                <class>Easylife_StockFilter_Block</class>
+            </easylife_stockfilter>
+            <catalog>
+                <rewrite>
+                    <layer_view>Easylife_StockFilter_Block_Catalog_Layer_View</layer_view>
+                </rewrite>
+            </catalog>
+            <catalogsearch>
+                <rewrite>
+                    <layer>Easylife_StockFilter_Block_Catalogsearch_Layer</layer>
+                </rewrite>
+            </catalogsearch>
+        </blocks>
+        <helpers>
+            <easylife_stockfilter>
+                <class>Easylife_StockFilter_Helper</class>
+            </easylife_stockfilter>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <catalog_layer_view_init_blocks>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>initStockFilterBlockCatalog</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalog_layer_view_init_blocks>
+            <catalog_layer_view_prepare_layout>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>addStockFilterBlockCatalog</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalog_layer_view_prepare_layout>
+            <catalog_layer_view_get_filters_before>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>addStockToFiltersCatalog</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalog_layer_view_get_filters_before>
+
+            <catalogsearch_layer_view_init_blocks>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>initStockFilterBlockSearch</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalogsearch_layer_view_init_blocks>
+            <catalogsearch_layer_view_prepare_layout>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>addStockFilterBlockSearch</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalogsearch_layer_view_prepare_layout>
+            <catalogsearch_layer_view_get_filters_before>
+                <observers>
+                    <easylife_stockfilter>
+                        <class>easylife_stockfilter/observer</class>
+                        <method>addStockToFiltersSearch</method>
+                    </easylife_stockfilter>
+                </observers>
+            </catalogsearch_layer_view_get_filters_before>
+        </events>
+        <translate>
+            <modules>
+                <Easylife_StockFilter>
+                    <files>
+                        <default>Easylife_StockFilter.csv</default>
+                    </files>
+                </Easylife_StockFilter>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Easylife_StockFilter>
+                    <files>
+                        <default>Easylife_StockFilter.csv</default>
+                    </files>
+                </Easylife_StockFilter>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <easylife_stock_filter>
+            <settings>
+                <enabled>1</enabled>
+                <catalog>1</catalog>
+                <search>0</search>
+                <url_param>in-stock</url_param>
+                <label>Stock Status</label>
+            </settings>
+        </easylife_stock_filter>
+    </default>
+</config>

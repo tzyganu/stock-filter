@@ -1,0 +1,11 @@
+Enabled,Activ
+"Enabled for Catalog pages","Activ pentru Catalog"
+"Enabled for Search pages","Activ pentru cautare"
+"Enabling this makes sense only if you choose to display out of stock products in your store. This setting is currently enabled.","Activarea acestei functionalitati are sens doar data ai configurat magazinul tau sa afiseze produsele care nu sunt in stoc. In acest moment setarea este activa"
+"Filter label","Eticheta filtru"
+"In Stock","In stock"
+"Layered Nav Stock Filter","Filtru stoc in navigarea stratificata"
+"Out of stock","Stoc epuizat"
+Settings,Setari
+"URL param name","Nume parametru URL"
+"Your store does not display out of stock products so enabling this extension is useless. You have to show the out of stock products for this extension to make sense. You can do that from <a href=""%s"">System->Configuration->Inventory->Stock Options</a>. Set the field ""Display Out of Stock Products"" to ""Yes""","Magazinul tau nu afiseaza produsele cu stock epuizat, deci activarea acestei functionalitati este inutila. Trebuie sa afisezi produsele cu stock limiat pentru ca aceasta functionaliotate sa aiba sens. Poti face asta din <a href=""%s"">Sistem->Conviguratie->Inventar->Optiuni Stoc</a>. Seteaza campul ""Afiseaza produsele cu stoc epuizat"" pe ""Da"""

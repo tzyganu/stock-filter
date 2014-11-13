@@ -1,0 +1,11 @@
+Enabled,Enabled
+"Enabled for Catalog pages","Enabled for Catalog pages"
+"Enabled for Search pages","Enabled for Search pages"
+"Enabling this makes sense only if you choose to display out of stock products in your store. This setting is currently enabled.","Enabling this makes sense only if you choose to display out of stock products in your store. This setting is currently enabled."
+"Filter label","Filter label"
+"In Stock","In Stock"
+"Layered Nav Stock Filter","Layered Nav Stock Filter"
+"Out of stock","Out of stock"
+Settings,Settings
+"URL param name","URL param name"
+"Your store does not display out of stock products so enabling this extension is useless. You have to show the out of stock products for this extension to make sense. You can do that from <a href=""%s"">System->Configuration->Inventory->Stock Options</a>. Set the field ""Display Out of Stock Products"" to ""Yes""","Your store does not display out of stock products so enabling this extension is useless. You have to show the out of stock products for this extension to make sense. You can do that from <a href=""%s"">System->Configuration->Inventory->Stock Options</a>. Set the field ""Display Out of Stock Products"" to ""Yes"""
